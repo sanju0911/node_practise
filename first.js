@@ -1,6 +1,9 @@
-console.log("hello world")
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  console.log(req);
+});
 
 
-// const fs = require('fs');
 
-// fs.writeFileSync('hello.txt','hello world form text file');
+server.listen(4000);
